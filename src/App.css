@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+    margin :0%;
+    padding : 0%;
+    font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+nav{
+    background-color: rgb(228, 116, 174);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    background-color: rgb(245, 73, 245);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    background-color: rgb(226, 104, 124);
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 1vmax 8vmax;
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container > form {
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.App-link {
-  color: #61dafb;
+input,textarea,button{
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.214);
+    border-radius: 5px;
+    margin: 5px 0px;
+    font-size: 1.0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color : white
 }
+button:hover{
+    background-color: rgb(30, 30, 30);
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    font-size: 1.2rem;
+}
+.task > div{
+    width: 100%;
+}
+
+.task span{
+    color: rgb(58, 55, 55);
+}
+.task button{
+    border-radius: 100%;
+    background-color: rgba(245, 0, 0, 0.685);
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task button:hover{
+    background-color: red;
+}
+
+/* *{
+    border : 1px solid red;
+} */
